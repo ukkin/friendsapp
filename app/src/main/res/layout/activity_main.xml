@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/friendbtn"
+    />
+
+
+   <!-- <ImageView
+        android:id="@+id/picassoImageView"
+        android:layout_width="match_parent"
+        android:layout_below="@id/friendbtn"
+        android:layout_height="400dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:src="@mipmap/ic_launcher" />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/set_profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/friendbtn"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/uploadbtn"
+        android:layout_below="@id/set_profile_image"
+        />
+</RelativeLayout>
